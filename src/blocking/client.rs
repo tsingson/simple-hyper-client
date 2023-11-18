@@ -112,7 +112,7 @@ impl Client {
 pub struct ClientBuilder(AsyncClientBuilder);
 
 impl ClientBuilder {
-    fn new() -> Self {
+    pub fn new() -> Self {
         ClientBuilder(AsyncClientBuilder::new())
     }
 
